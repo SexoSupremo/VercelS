@@ -2,14 +2,14 @@ from django.shortcuts import render
 from django.shortcuts import redirect
 from .models import Article
 from .forms import ArticleForm
-
+from django.http import HttpResponse
 
 def index(request):
     articles = Article.objects.all()
     params = {
         'articles': articles,
     }
-    return render(request, 'blog/index.html', params)
+    return HttpResponse(request, 'blog/index.html', params)
 
 
 def create(request):
