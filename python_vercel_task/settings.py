@@ -86,10 +86,7 @@ DATABASES = {
         'PASSWORD': os.environ.get("SUPABASE_PASSWORD"),
         'HOST': os.environ.get("SUPABASE_HOST"),
         'PORT': '6543',
-        "OPTIONS": {
-            "sslmode": "verify-full",
-            "sslrootcert": os.path.join(BASE_DIR, 'prod-ca-2021.crt'),
-        }
+       
     }
 }
 
