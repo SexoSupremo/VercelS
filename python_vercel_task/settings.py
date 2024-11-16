@@ -86,7 +86,6 @@ DATABASES = {
         'PASSWORD': os.environ.get("SUPABASE_PASSWORD"),
         'HOST': os.environ.get("SUPABASE_HOST"),
         'PORT': '6543',
-       
     }
 }
 
